@@ -1,4 +1,3 @@
-import java.util.LinkedList;
 import java.util.ArrayList;
 
 public class HashTable {
@@ -10,8 +9,9 @@ public class HashTable {
     //2. map the hashcode to an index in the array (ex. hash(key)%array_length)
     //3. At this index store the key and value. Linkedlist is used to avoid collision
 
-    LinkedList value[] = new LinkedList[1];
+    ArrayList<HashLinkedList> array = new ArrayList<HashLinkedList>();
 
+    
 
     public int hash(String value){
         return 0;
