@@ -64,6 +64,30 @@ public class HashLinkedList{
             }
         }
     }
+
+    /**
+     * Prints the values in the linked list as strings. 
+     * Uses the toString() method, your object needs to have implemented it.
+     */
+    public String toString(){
+        StringBuilder msg = new StringBuilder();
+        if (head == null){
+            return "";
+        }else{
+            HashNode current = head;
+
+            do{
+                msg.append("[");
+                msg.append(current.value.toString());
+                msg.append("] ");
+                current = current.next;
+            }while(current.next!=null);
+            msg.append("[");
+            msg.append(current.value.toString());
+            msg.append("] ");
+            return msg.toString();
+        }
+    }
 }
 
 /**

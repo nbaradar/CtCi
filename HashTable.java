@@ -11,10 +11,21 @@ public class HashTable {
 
     ArrayList<HashLinkedList> array = new ArrayList<HashLinkedList>();
 
-    
+
 
     public int hash(String value){
         return 0;
     }
-}
+    
+    public static void main(String args[]){
+        HashLinkedList testList = new HashLinkedList();
 
+        testList.append(new String("test"));
+        testList.append(new String("test2"));
+        testList.append(new String("test3"));
+
+        testList.prepend(new String("prepend"));
+
+        System.out.println(testList.toString());
+    }
+}
