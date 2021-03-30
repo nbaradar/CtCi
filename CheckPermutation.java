@@ -14,15 +14,23 @@ public class CheckPermutation{
         char[] inp2 = input2.toCharArray();
 
         Hashtable<Integer, Character> hash1 = new Hashtable<Integer, Character>();
-        Hashtable<Integer, String> hash2 = new Hashtable<Integer, String>();
+        Hashtable<Integer, Character> hash2 = new Hashtable<Integer, Character>();
 
         int maxlength = (input1.length()>input2.length() ? input1.length() : input2.length());
 
         for (int x=0; x<maxlength; x++){
-            if (inp1[x]!=0){
-                hash1.put(inp1[x], inp1[x]);
+            if (x < inp1.length && inp1[x]!=0){
+                hash1.put(Integer.valueOf(inp1[x]), Character.valueOf(inp2[x]));
+            }
+            if (x < inp2.length && inp2[x]!=0){
+                hash2.put(Integer.valueOf(inp2[x]), Character.valueOf(inp2[x]));
             }
         }
         
+        if (hash1.equals(hash2)){
+            System.out.print("Strings are permutation of each other.");
+        } else {
+            System.out.print("Strings are unique");
+        }
     }
 }
