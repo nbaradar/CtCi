@@ -1,3 +1,4 @@
+package datastructures.hashtable;
 /**
  * This is an implementation of a LinkedList. It will be used to create a HashTable (Array of linked lists)
  * 

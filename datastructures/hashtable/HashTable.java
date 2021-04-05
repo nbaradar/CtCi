@@ -1,5 +1,6 @@
-import java.util.ArrayList;
+package datastructures.hashtable;
 
+import java.util.ArrayList;
 public class HashTable {
     //array of linked lists
     //hash function

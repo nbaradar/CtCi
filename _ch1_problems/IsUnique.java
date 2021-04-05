@@ -1,3 +1,5 @@
+package _ch1_problems;
+
 import java.util.Scanner;
 import java.util.Hashtable;
 
