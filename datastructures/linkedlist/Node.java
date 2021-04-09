@@ -1,10 +1,10 @@
 package datastructures.linkedlist;
 
-public class Node{
-    Node next;
-    int data;
+public class Node<T>{
+    Node<T> next;
+    T data;
 
-    public Node(int data){
+    public Node(T data){
         this.data = data;
     }
 }
