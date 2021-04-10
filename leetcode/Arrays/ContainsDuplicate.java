@@ -1,4 +1,4 @@
-package leetcode;
+package leetcode.Arrays;
 
 import java.util.Arrays;
 import java.util.Scanner;
@@ -14,7 +14,7 @@ public class ContainsDuplicate{
 
         System.out.print(checkDuplicates3(array2));
 
-
+        
 
     }
 

@@ -1,3 +1,7 @@
+/**
+ * This will be the stack data structure that will hold references to all the nodes and provide methods to manipulate the data.
+ * @author nader
+ */
 package datastructures.stack;
 
 import java.util.EmptyStackException;
